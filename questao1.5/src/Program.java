@@ -12,7 +12,7 @@ public class Program {
 		double diametro,volume,raio,PI;
 		
 		System.out.print("Digite o diâmetro da esfera: ");
-		diametro = sc.nextFloat();
+		diametro = sc.nextDouble();
 		
 		//Biblioteca Math usada para fazer a pontenciação e pegar valor de Pi
 		
@@ -21,7 +21,7 @@ public class Program {
 		volume = (4.0/3.0)*PI*(Math.pow(raio, 3));
 		
 		System.out.println();
-		System.out.println("O Volume da esfera é: "+volume+" cm²");
+		System.out.println("O Volume da esfera é: "+volume+" cm³");
 		
 		sc.close();
 
