@@ -39,7 +39,7 @@ public class Program {
 			n = sc.nextInt();
 
 			// condicional para exibir mensagem de erro.
-			if (n <= 0 || n > 50) {
+			if (n <= 0 || n > 20) {
 				System.out.println("Erro: valor inválido, Entre com valor de 'N' novamente.");
 			}
 		}
