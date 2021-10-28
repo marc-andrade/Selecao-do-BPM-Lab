@@ -4,20 +4,20 @@ public class Program {
 
 	public static void main(String[] args) {
 		/*1.8 Milhas vs Km
-		Sabendo que uma milha marítima equivale a um mil, oitocentos e
-		cinqüenta e dois metros e que um quilômetro possui mil metros, fazer um
-		programa para converter milhas marítimas em quilômetros.*/
+		Sabendo que uma milha marï¿½tima equivale a um mil, oitocentos e
+		cinqï¿½enta e dois metros e que um quilï¿½metro possui mil metros, fazer um
+		programa para converter milhas marï¿½timas em quilï¿½metros.*/
 		
 		Scanner sc = new Scanner(System.in);
-		// milhaM = milha marítima, km = quilômetros.
+		// milhaM = milha marï¿½tima, km = quilï¿½metros.
 		double milhaM, km;
 		
-		System.out.print("Digite o valor de milhas marítima a ser convertido: ");
+		System.out.print("Digite o valor de milhas marï¿½tima a ser convertido: ");
 		milhaM = sc.nextDouble();
 		
-		km = (milhaM/1.852);
+		km = (milhaM*1.852);
 
-		System.out.printf("O valor convertido em quilômetros é: %.2f km",km);	
+		System.out.print("O valor convertido em quilÃ´metros Ã©: "+km+ "km");	
 		
 		sc.close();
 	}
