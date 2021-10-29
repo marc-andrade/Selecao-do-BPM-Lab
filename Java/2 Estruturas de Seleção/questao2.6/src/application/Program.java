@@ -6,7 +6,7 @@ public class Program {
 
 	public static void main(String[] args) {
 		/*
-		 * 2.6 Maior Valor - v3 Entrar via teclado com três valores distintos. Exibir o
+		 * 2.6 Maior Valor - v3 Entrar via teclado com trï¿½s valores distintos. Exibir o
 		 * maior deles.
 		 */
 
@@ -14,7 +14,7 @@ public class Program {
 
 		double v1, v2,v3;
 		System.out.println("======================================");
-		System.out.println("   Entre com três valores distintos");
+		System.out.println("   Entre com trÃªs valores distintos");
 		System.out.println("======================================");
 		System.out.print("Digite o primeiro valor: ");
 		v1 = sc.nextDouble();
@@ -25,19 +25,19 @@ public class Program {
 
 		if (v1 > v2 && v1 > v3) {
 			System.out.println();
-			System.out.printf("O primeiro valor: " + v1 + " é maior entre os dois");
+			System.out.printf("O primeiro valor: " + v1 + "e o maior entre os tres");
 		}
 		if (v2 > v1 && v2 > v3) {
 			System.out.println();
-			System.out.print("O segundo valor: " + v2 + " é maior entre os dois");
+			System.out.print("O segundo valor: " + v2 + " e o maior entre os tres");
 		}
 		if (v3 > v1 && v3 > v2) {
 			System.out.println();
-			System.out.print("O Terceiro valor: " + v3 + " é maior entre os dois");
+			System.out.print("O Terceiro valor: " + v3 + " e o maior entre os tres");
 		}
 		if (v1 == v2 && v1 == v3) {
 			System.out.println();
-			System.out.println("Os números são idênticos");
+			System.out.println("Os nÃºmeros sÃ£o identicos");
 		}
 
 		sc.close();
