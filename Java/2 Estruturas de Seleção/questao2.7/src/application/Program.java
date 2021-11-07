@@ -6,9 +6,9 @@ public class Program {
 
 	public static void main(String[] args) {
 		/*2.7 Peso Ideal - v1
-		Entrar com o peso e a altura de uma determinada pessoa. Após a
-		digitação, exibir se esta pessoa está ou não com seu peso ideal. Veja tabela da
-		relação peso/altura2*/
+		Entrar com o peso e a altura de uma determinada pessoa. Apï¿½s a
+		digitaï¿½ï¿½o, exibir se esta pessoa estï¿½ ou nï¿½o com seu peso ideal. Veja tabela da
+		relaï¿½ï¿½o peso/altura2*/
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -26,16 +26,17 @@ public class Program {
 		if (R < 20 ) {
 			System.out.println();
 			System.out.println("Abaixo do Peso");
-		}
-		if (20 <= R && R < 25) {
+			
+		} else if (R < 25) {
 			System.out.println();
 			System.out.println("Peso Ideal");
-		}
-		
-		if (R >= 25 ) {
+		}else {
 			System.out.println();
 			System.out.println("Acima do Peso");
 		}
+		
+			
+		
 		
 		sc.close();
 	}

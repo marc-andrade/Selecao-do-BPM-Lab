@@ -41,13 +41,13 @@ public class Program {
 		if(0<=v && v<=40) {
 			System.out.println("Veículo muito lento");
 		}
-		else if (40 < v && v <= 60) {
+		else if (v <= 60) {
 			System.out.println("Velocidade permitida");
 		}
-		else if (60 < v && v <= 80) {
+		else if (v <= 80) {
 			System.out.println("Velocidade de cruzeiro");
 		}
-		else if (80 < v && v <= 120) {
+		else if (v <= 120) {
 			System.out.println("Veículo rápido");
 		}
 		else if (v > 120) {

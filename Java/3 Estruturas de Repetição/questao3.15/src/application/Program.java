@@ -7,15 +7,15 @@ public class Program {
 	public static void main(String[] args) {
 
 		/*
-		 * 3.15 Maior, Menor, Soma e Média, Positivos e Negativos - v1
+		 * 3.15 Maior, Menor, Soma e Mï¿½dia, Positivos e Negativos - v1
 		 * 
-		 * Entrar via teclado com “N” valores quaisquer. O valor “N” (que repre- senta a
-		 * quantidade de números) será digitado, deverá ser positivo, mas menor que
-		 * vinte. Caso a quantidade não satisfaça a restrição, enviar mensagem de erro e
-		 * solicitar o valor novamente. Após a digitação dos “N” valores, exibir:
+		 * Entrar via teclado com ï¿½Nï¿½ valores quaisquer. O valor ï¿½Nï¿½ (que repre- senta a
+		 * quantidade de nï¿½meros) serï¿½ digitado, deverï¿½ ser positivo, mas menor que
+		 * vinte. Caso a quantidade nï¿½o satisfaï¿½a a restriï¿½ï¿½o, enviar mensagem de erro e
+		 * solicitar o valor novamente. Apï¿½s a digitaï¿½ï¿½o dos ï¿½Nï¿½ valores, exibir:
 		 * 
-		 * A. O maior valor; B. O menor valor; C. A soma dos valores; D. A média
-		 * aritmética dos valores. E. A porcentagem de valores que são positivos; F. A
+		 * A. O maior valor; B. O menor valor; C. A soma dos valores; D. A mï¿½dia
+		 * aritmï¿½tica dos valores. E. A porcentagem de valores que sï¿½o positivos; F. A
 		 * porcentagem de valores negativos.
 		 */
 
@@ -24,41 +24,41 @@ public class Program {
 		int n = 0;
 		double maior,menor, sum = 0, possitivo = 0, negativo = 0, media;
 
-		System.out.println("O valor de 'N' termos tem que ser um número possitivo e menor que vinte.");
+		System.out.println("O valor de 'N' termos tem que ser um nï¿½mero possitivo e menor que vinte.");
 
-		// Laço para conção dos valores possitivos e maiores que vinte
+		// Laï¿½o para conï¿½ï¿½o dos valores possitivos e maiores que vinte
 		while (n <= 0 || n > 20) {
 			System.out.print("Digite o valor de 'N': ");
 			n = sc.nextInt();
 
 			// condicional para exibir mensagem de erro.
 			if (n <= 0 || n > 50) {
-				System.out.println("Erro: valor inválido, Entre com valor de 'N' novamente.");
+				System.out.println("Erro: valor invï¿½lido, Entre com valor de 'N' novamente.");
 			}
 		}
 		System.out.println();
-		// Variável declarada em baixo para atribuição de tamanho de vetor, vet[]<-n.
+		// Variï¿½vel declarada em baixo para atribuiï¿½ï¿½o de tamanho de vetor, vet[]<-n.
 		double vet[] = new double[n];
 
 		for (int i = 0; i < vet.length; i++) {
-			System.out.printf("Digite o %d° valor: ", (i + 1));
+			System.out.printf("Digite o %dï¿½ valor: ", (i + 1));
 			vet[i] = sc.nextDouble();
 		}
 		maior = vet[0];
 		menor = vet[0];
 		
 		for (int i = 0; i < vet.length; i++) {
-			// condição para pegar o maior valor
+			// condiï¿½ï¿½o para pegar o maior valor
 			if (vet[i] > maior) {
 				maior = vet[i];
 			}
-			// condição para pegar o menor valor
-			if (vet[i] < menor) {
+			// condiï¿½ï¿½o para pegar o menor valor
+			else if (vet[i] < menor) {
 				menor = vet[i];
-			}
-
-			if (vet[i] > 0) {
+				
+			}else if (vet[i] > 0) {
 				possitivo++;
+		
 			} else if (vet[i] < 0) {
 				negativo++;
 			}
@@ -66,17 +66,17 @@ public class Program {
 			sum += vet[i];
 		}
 
-		// fórmula para a média dos valores
+		// fï¿½rmula para a mï¿½dia dos valores
 		media = sum / n;
 
 		System.out.println();
-		System.out.println("O maior valor é: " + maior);
-		System.out.println("O menor valor é: " + menor);
-		System.out.println("A soma dos valores é: " + sum);
-		System.out.println("A média aritmética dos valores é: " + media);
-		// Fórmula para calcular porcentagem dentro dos comandos de mensagem
-		System.out.println("A porcentagem de valores que são positivos é: " + (possitivo / n) * 100 + "%");
-		System.out.println("A porcentagem de valores negativos é: " + ((negativo / n) * 100) + "%");
+		System.out.println("O maior valor e: " + maior);
+		System.out.println("O menor valor e: " + menor);
+		System.out.println("A soma dos valores ï¿½: " + sum);
+		System.out.println("A mï¿½dia aritmï¿½tica dos valores ï¿½: " + media);
+		// Formula para calcular porcentagem dentro dos comandos de mensagem
+		System.out.println("A porcentagem de valores que sao positivos ï¿½: " + (possitivo / n) * 100 + "%");
+		System.out.println("A porcentagem de valores negativos ï¿½: " + ((negativo / n) * 100) + "%");
 		sc.close();
 	}
 
